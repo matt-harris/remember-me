@@ -1,0 +1,79 @@
+//---------------------------------------------//
+// Cards
+// Styling for deck and individual cards.
+//---------------------------------------------//
+
+.deck {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: $color-grey-light;
+  list-style-type: none;
+  border-radius: .25rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: .5rem;
+  background-color: $color-grey-dark;
+  color: #fff;
+  font-size: 0;
+  border-radius: .25rem;
+  cursor: default;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-fill-mode: both;
+  backface-visibility: visible !important;
+
+  @include respond-min($mobile-landscape) {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  @include respond-min($tablet-narrow) {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  @include respond-min($tablet) {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  &.card--open {
+    background-color: $color-primary;
+    animation-name: flipInY;
+    animation-duration: .8s;
+  }
+
+  &.card--show {
+    font-size: 2rem;
+  }
+
+  &.card--match {
+    font-size: 2rem;
+    background-color: $color-secondary;
+    animation-name: rotateIn;
+    animation-duration: .8s;
+  }
+
+  &.card--unmatched {
+    background-color: $color-tertiary;
+    animation-name: shake;
+    animation-duration: .8s;
+  }
+
+  &.card--disabled {
+    pointer-events: none;
+  }
+}

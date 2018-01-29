@@ -1,0 +1,99 @@
+<!--https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Remember me! A memory Game.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/outline.css">
+</head>
+<body>
+  <div class="container game-container">
+    <header class="header">
+      <h1 class="header__title">Remember me!</h1>
+
+      <div class="header__info">
+        <ul class="star-rating">
+          <li class="rm-star"></li>
+          <li class="rm-star"></li>
+          <li class="rm-star"></li>
+        </ul>
+
+        <div class="moves">
+          Moves: <span class="moves__count">0</span>
+        </div>
+
+        <div class="timer"></div>
+
+        <div class="restart-btn rm-repeat"></div>
+      </div>
+    </header>
+
+    <ul class="deck">
+      <li class="card" data-icon="football">
+        ⚽
+      </li>
+      <li class="card" data-icon="football">
+        ⚽
+      </li>
+      <li class="card" data-icon="beer">
+        🍺
+      </li>
+      <li class="card" data-icon="beer">
+        🍺
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="ok">
+        👌
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+      <li class="card" data-icon="star">
+        ⭐
+      </li>
+    </ul>
+
+    <div class="overlay">
+      <div class="overlay__content">
+        <h2>Congratulations</h2>
+        <a class="overlay__close-btn" href=# >X</a>
+        <p>🏆</p>
+        <p>You are a winner!</p>
+        <p class="overlay__moves">You made ${finalMoves} moves</p>
+        <p class="overlay__time">in ${finalMoves}</p>
+        <ul class="overlay__rating"></ul>
+        <button class="overlay__play-btn">Play again 👍</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+</body>
+</html>

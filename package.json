@@ -1,0 +1,21 @@
+{
+  "name": "remember-me",
+  "version": "1.0.0",
+  "description": "Remember Me! - A simple memory game.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "keywords": [
+    "Game",
+    "Javascript",
+    "Remember",
+    "me"
+  ],
+  "author": "Matt Harris",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

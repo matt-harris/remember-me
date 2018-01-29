@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'remember-me';
+  src: url('../fonts/remember-me.woff?8p129x') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="rm-"], [class*=" rm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'remember-me' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rm-star {
+  &:before {
+    content: $rm-star;
+  }
+}
+
+.rm-repeat {
+  &:before {
+    content: $rm-repeat;
+  }
+}
+
+.rm-rotate-right {
+  &:before {
+    content: $rm-rotate-right;
+  }
+}
+
+.rm-gift {
+  &:before {
+    content: $rm-gift;
+  }
+}
+
+.rm-key {
+  &:before {
+    content: $rm-key;
+  }
+}
+
+.rm-trophy {
+  &:before {
+    content: $rm-trophy;
+  }
+}
+
+.rm-magic {
+  &:before {
+    content: $rm-magic;
+  }
+}
+
+.rm-gamepad {
+  &:before {
+    content: $rm-gamepad;
+  }
+}
+
+.rm-moon-o {
+  &:before {
+    content: $rm-moon-o;
+  }
+}
+
+.rm-automobile {
+  &:before {
+    content: $rm-automobile;
+  }
+}
+
+.rm-car {
+  &:before {
+    content: $rm-car;
+  }
+}
+
+.rm-user-secret {
+  &:before {
+    content: $rm-user-secret;
+  }
+}
+
+.rm-hand-peace-o {
+  &:before {
+    content: $rm-hand-peace-o;
+  }
+}

@@ -1,0 +1,40 @@
+//---------------------------------------------//
+// Outline v0.1
+// A lightweight front-end boilerplate by Matt Harris
+// Free to use under the MIT License
+// Docs - http://outlinecss.co.uk/get-started.html
+//---------------------------------------------//
+
+// Utilities - make sure you import variables first
+@import
+  "utils/variables",
+  "utils/functions",
+  "utils/mixins",
+  "utils/helpers";
+
+// Vendors and external stylesheets
+@import
+  "vendors/font-awesome";
+
+// Base
+@import
+  "base/print",
+  "base/reset",
+  "base/typography";
+
+// Layout
+@import
+  "layout/layout";
+
+// Components
+@import
+  "components/ani mations",
+  "components/game-header",
+  "components/cards",
+  "components/overlay";
+
+// Pages
+
+// Themes
+@import
+  "themes/game";

@@ -1,0 +1,68 @@
+//---------------------------------------------//
+// Overlay
+// Styling for winner's overlay component.
+//---------------------------------------------//
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__content {
+    position: relative;
+    width: 90%;
+    max-width: 37.5rem;
+    margin: 4.5rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 5s ease-in-out;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: $color-grey-dark;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 200ms;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.overlay--show {
+  visibility: visible !important;
+  opacity: 100 !important;
+}
+
+.overlay__rating {
+  margin: 1rem 0;
+  padding: 0;
+  list-style-type: none;
+
+  &:before {
+    content: 'Rating:';
+    padding-right: .5rem;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
